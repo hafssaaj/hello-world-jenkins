@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build du projet'
+            }
+        }
+
+        stage('Run Hello World') {
+            steps {
+                sh 'hello.sh'
+            }
+        }
+    }
+}
