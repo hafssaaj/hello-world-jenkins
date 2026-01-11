@@ -8,9 +8,9 @@ pipeline {
             }
         }
 
-        stage('Run Hello World') {
+        stage('Hello World') {
             steps {
-                sh 'hello.sh'
+                echo 'Hello World depuis Jenkins CI/CD'
             }
         }
     }
